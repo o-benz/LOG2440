@@ -1,0 +1,19 @@
+{
+  "name": "20233-tp1",
+  "version": "1.0.0",
+  "description": "Travaux pratiques pour les étudiants du cours LOG2440 de la session AUT23",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -a localhost -p 3000 -o src",
+    "test:headless": "cypress run --browser chrome",
+    "test": "cypress open"
+  },
+  "author": "LOG2440",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "cypress": "^12.17.4"
+  }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./assets/img/favico.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,600&family=Roboto:ital,wght@0,400;0,500;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+  <title>PolyPlay</title>
+</head>
+
+<body>
+  <header>
+    <!-- Logo and Navigation Links -->
+    <div class="header-content">
+      <nav id="nav-bar">
+        <ul class="nav-links">
+          <li><a href="./index.html" class="logo-link"><img src="./assets/img/logo-polyflix.png" alt="Logo Polyflix" /></a></li>
+          <li><a href="./admin.html" class="other-link">Admin</a></li>
+          <li><a href="./about.html" class="other-link">À propos</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Search Bar -->
+    <nav>
+      <form id="search-form">
+        <div class="search-bar" style="display: flex; align-items: center;">
+          <input type="text" id="search-input" placeholder="Recherche de films" />
+          <button class="search-button">
+            <img src="./assets/img/search.png" alt="Search" />
+          </button>
+        </div>
+      </form>
+    </nav>
+  </header>
+  
+
+<main>
+  <div class="movie-details-container">
+    <div class="movie-poster" data-title="cyborg">
+      <img src="./assets/img/cyborg.jpg" alt="cyborg"/>
+    </div>
+
+    <div class="movie-details">
+      <div id="movie-title">
+        <h1>Cyborg</h1>
+      </div>
+      
+      <div class="movie-description" id="movie-description">
+        <strong>Description: </strong>
+        <p class="description-text">Il s'agit d'un film dans un univers futuriste ou un robot solitaire explore une planète désertique</p>
+      </div>
+
+      <div class="movie-item" id="movie-actors">
+        <strong>Act.eurs.rices: </strong>
+        <p>Margerite Montaigne, Chantale Tremblay, Véronique Bélanger</p>
+      </div>
+
+      <div class="movie-item" id="movie-date">
+        <strong>Date de sortie: </strong>
+        <p>21/08/2022</p>
+      </div>
+
+      <div class="movie-item" id="movie-duration">
+        <strong>Durée: </strong>
+        <p>2h30</p>
+      </div>
+
+      <div class="movie-corr" id="movie-corr">
+        <strong>Correspondance: </strong>
+        <p>83%</p>
+      </div>
+
+      <div class="movie-age" id="movie-age">
+        <strong>Ce film est destiné aux 18+</strong>
+      </div>
+    </div>
+  </div>
+
+  <video class="movie-container" controls>
+    <source src="./assets/mp4/video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</main>
+
+  <footer>
+    <span id="student-1">Benzekri, Omar 2244082 #1</span>
+    <span id="student-2">Benzekri, Omar 2244082 #1</span>
+  </footer>
+</body>
+
+</html>

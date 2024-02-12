@@ -1,0 +1,258 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #3F9CFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#detail-page-header {
+    justify-content: space-between;
+}
+
+header i:hover {
+    color: #c0392b;
+}
+
+header p {
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+#pinned-icon-spaces {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sort-order {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#pinned-notes,
+#notes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 0;
+}
+
+
+.note {
+    color: #fff;
+    width: 80%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #7f947b;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.note h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.note p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.note p.tags {
+    margin-top: 10px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form textarea,
+form input[type="color"],
+form input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.delete-button {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+}
+
+.delete-button i {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.pin {
+    font-size: 24px !important;
+}
+
+.pin:hover {
+    font-size: 30px !important;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.note:hover .pin {
+    visibility: visible;
+}
+
+.fa-home {
+    cursor: pointer;
+}
+
+label[for="noteColor"] {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+
+input[type="color"] {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="color"]:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+input[type="color"]:active {
+    transform: scale(1.1);
+}
+
+#noteColor {
+    padding: 0px;
+}
+
+#button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    width: 30%;
+    margin: auto;
+}
+
+#delete-all-button {
+    background-color: #e74c3c;
+}
+
+.details-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+.details-button:hover {
+    background-color: #0056b3;
+}

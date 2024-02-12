@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./assets/img/favico.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,600&family=Roboto:ital,wght@0,400;0,500;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+  <title>PolyPlay</title>
+</head>
+
+<body>
+  <header>
+    <!-- Logo and Navigation Links -->
+    <div class="header-content">
+      <nav id="nav-bar">
+        <ul class="nav-links">
+          <li><a href="./index.html" class="logo-link"><img src="./assets/img/logo-polyflix.png" alt="Logo Polyflix" /></a></li>
+          <li><a href="./admin.html" class="current-link">Admin</a></li>
+          <li><a href="./about.html" class="other-link">À propos</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Search Bar -->
+    <nav>
+      <form id="search-form">
+        <div class="search-bar" style="display: flex; align-items: center;">
+          <input type="text" id="search-input" placeholder="Recherche de films" />
+          <button class="search-button">
+            <img src="./assets/img/search.png" alt="Search" />
+          </button>
+        </div>
+      </form>
+    </nav>
+  </header>
+
+<main>
+    <form id="movie-form" enctype="multipart/form-data" method="get">
+      <fieldset>
+        <legend>Infomations générales</legend>
+        <!-- Titre du film -->
+        <div>
+          <label for="name">Nom du film: </label>
+          <input type="text" id="name" required pattern="^(?!\s*$).+" title="Name cannot be all spaces">
+        </div>
+
+        <!-- Description du film -->
+        <div>
+          <label for="description">Description: </label>
+          <input type="text" id="description" required>
+        </div>
+
+        <!-- Affiche du film -->
+        <div>
+          <label for="image">Image: </label>
+          <input type="file" id="image" accept="image/*" required>
+        </div>
+
+        <!-- Film -->
+        <div>
+          <label for="video">Vidéo: </label>
+          <input type="file" id="video" accept="video/*" required>
+        </div>
+
+        <!-- Durée du film -->
+        <div>
+          <label for="duration">Durée (minutes): </label>
+          <input type="number" id="duration" name="duration" min="1" required>
+        </div>
+
+        <!-- Date de sortie -->
+        <div>
+          <label for="release-date">Date de sortie: </label>
+          <input type="date" id="release-date" name="release-date" required>
+        </div>
+
+        <!-- Acteurs.rices -->
+        <div>
+            <label for="actor-input">Act.eurs.rices: </label>
+            <input list="actors-datalist" id="actor-input" type="select">
+            <button class="fa fa-plus" id="add-cast-button"></button>
+        </div>
+        <datalist id="actors-datalist">
+            <option value="Margerite Montaigne">
+            <option value="Chantale Tremblay">
+            <option value="Véronique Bélanger">
+        </datalist>
+        <label>1. Margerite Montaigne</label>
+        <br>
+
+        <!-- Checkbox for 18+ -->
+        <label for="is-adult">Ce film est destiné aux 18+<input type="checkbox" id="is-adult" name="is-adult"></label>
+        <br>
+      </fieldset>
+
+      <div class="poster-preview" data-title="cyborg">
+        <img src="./assets/img/cyborg.jpg" alt="cyborg"/>
+      </div>
+
+      <!-- Bouton pour ajouter le film -->
+      <div class="centered-button">
+        <input type="submit" value="Ajouter le film">
+      </div>
+    </form>
+</main>
+
+  <footer>
+    <span id="student-1">Benzekri, Omar 2244082 #1</span>
+    <span id="student-2">Benzekri, Omar 2244082 #1</span>
+  </footer>
+</body>
+
+</html>

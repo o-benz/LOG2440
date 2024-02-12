@@ -1,0 +1,64 @@
+{
+    "films": [
+        {
+            "Nom": "Voyage dans le désert",
+            "Description": "Il s'agit d'un film dans un univers futuriste où un humain solitaire explore une planète désertique.",
+            "Acteurs": [
+                "Margerite Montaigne",
+                "Éric Laroche",
+                "François Bélanger"
+            ],
+            "Durée": 90,
+            "Date": "2020-03-13",
+            "Image": "desert.jpg"
+        },
+        {
+            "Nom": "Cyborg",
+            "Description": "Il s'agit d'un film dans un univers futuriste où un robot solitaire explore une planète désertique.",
+            "Acteurs": [
+                "Margerite Montaigne",
+                "Chantale Tremblay",
+                "Véronique Bélanger"
+            ],
+            "Durée": 150,
+            "Date": "2022-08-21",
+            "Image": "cyborg.jpg"
+        },
+        {
+            "Nom": "Les bons vieux jours 2",
+            "Description": "Film d'espionnage où les acteurs mettent leur vie en danger. Vous n'en croirez pas vos yeux!",
+            "Acteurs": [
+                "Éric Laroche",
+                "Sylvain Laforest",
+                "Véronique Bélanger"
+            ],
+            "Durée": 124,
+            "Date": "2011-09-23",
+            "Image": "noir.jpg"
+        },
+        {
+            "Nom": "Le piano de l'aveugle",
+            "Description": "Histoire d'un petit garçon qui apprend à jouer au piano malgré sa phobie de la musique.",
+            "Acteurs": [
+                "Éric Coupale",
+                "Pénoloppe Laforest",
+                "Simone Beaulac"
+            ],
+            "Durée": 200,
+            "Date": "2007-10-23",
+            "Image": "piano.jpg"
+        },
+        {
+            "Nom": "Arizona",
+            "Description": "Comédie musicale qui vous fera voyager à travers différents thèmes, chansons et bien plus.",
+            "Acteurs": [
+                "Hugo Laprise",
+                "Caroline Matte",
+                "Éric Pitre"
+            ],
+            "Durée": 199,
+            "Date": "2007-10-04",
+            "Image": "arizona.jpg"
+        }
+    ]
+}

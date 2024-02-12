@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/partner.js" type="module" defer></script>
+    <title>Poly Rate</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <h2>Poly Rate</h2>
+            <div class="topnav">
+                <a href="index.html">Accueil</a>
+                <a href="add.html">Ajouter des partenaires</a>
+            </div> 
+        </nav>
+        <div class="profile-container">
+            <div class="profile-info-container">
+                <h3 id="profile-firstName" class="profile-name"></h3>
+                <h3 id="profile-lastName" class="profile-name"></h3>
+                <h4 id="school"></h4>
+                <h4 id="program"><h4>
+            </div>
+            <div class="reviews-section">
+                <h3>Revues</h3>
+                <div id="reviews-list">
+                    <!-- Placer les revues ici -->
+                    <div class="review-container">
+                        <p class="comment">Pas encore de revue</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="rating">
+                <label for="rate">Note: </label>
+                <select id="rate" name="rate">
+                    <option value="1">1 - Mauvais</option>
+                    <option value="2">2 - Passable</option>
+                    <option value="3">3 - Bien</option>
+                    <option value="4">4 - Très bien</option>
+                    <option value="5">5 - Excellent</option>
+                </select>
+                <label for="author">Auteur: </label>
+                <input type="text" id="author" name="author">
+                <label for="comment">Commentaire: </label>
+                <textarea id="comment" name="comment"></textarea>
+                <button class="submit-btn" id="submit-btn">Soumettre la revue</button>
+                <button class="delete-btn" id="delete-btn">Supprimer un partenaire</button> 
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>

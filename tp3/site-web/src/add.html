@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/add.js" type="module" defer></script>
+    <title>Poly Rate</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <h2>Poly Rate</h2>
+            <div class="topnav">
+                <a href="index.html">Accueil</a>
+                <a class="active" href="add.html">Ajouter des partenaires</a>
+            </div> 
+        </nav>
+        <div class="form-container">
+            <h2 class="form-title">Ajouter un nouveau partenaire académique</h2>
+                <div class="input-group">
+                    <label for="first-name">Prénom :</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="input-group">
+                    <label for="last-name">Nom :</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="input-group">
+                    <label for="program">Programme :</label>
+                    <input type="text" id="program" name="program" required>
+                </div>
+                <div class="input-group">
+                    <label for="school">École :</label>
+                    <select id="school" name="school" required>
+                        <option value="">Sélectionnez une école</option>
+                        <option value="Poudlard">Poudlard</option>
+                        <option value="Académie de Starfleet">Académie de Starfleet</option>
+                        <option value="École Xavier pour jeunes surdoués">École Xavier pour jeunes surdoués</option>
+                        <option value="Lycée de Sunnydale">Lycée de Sunnydale</option>
+                        <option value="Collège communautaire de Greendale">Collège communautaire de Greendale</option>
+                    </select>
+                </div>
+                <button id="submit-btn">Ajouter un partenaire</button>  
+        </div>
+        
+    </main>
+</body>
+</html>

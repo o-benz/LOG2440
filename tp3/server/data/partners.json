@@ -1,0 +1,30 @@
+[
+  {
+    "id": "433560e4-62b9-481b-8135-da9bb9d68102",
+    "firstName": "Katie",
+    "lastName": "Bell",
+    "school": "Poudlard",
+    "program": "Magie"
+  },
+  {
+    "id": "a7c5b6d8-9e5f-4c3a-8f1c-6d7b8e9f0a1b",
+    "firstName": "Top",
+    "lastName": "Paris",
+    "school": "Académie de Starfleet",
+    "program": "Astrophysique"
+  },
+  {
+    "id": "b8d9e0f1-2a3b-4c5d-6e7f-8g9h0i1j2k3l",
+    "firstName": "Henry",
+    "lastName": "McCoy",
+    "school": "École Xavier pour jeunes surdoués",
+    "program": "Mathématiques"
+  },
+  {
+    "id": "m4n5o6p7-q8r9-s1t2-u3v4-w5x6y7z8a9b",
+    "firstName": "Buffy",
+    "lastName": "Summers",
+    "school": "Lycée de Sunnydale",
+    "program": "Tueuse de vampires"
+  }
+]

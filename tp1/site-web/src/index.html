@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./assets/img/favico.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,600&family=Roboto:ital,wght@0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+  <title>PolyPlay</title>
+</head>
+
+<body>
+  <header>
+    <!-- Logo and Navigation Links -->
+    <div class="header-content">
+      <nav id="nav-bar">
+        <ul class="nav-links">
+          <li><a href="./index.html" class="logo-link"><img src="./assets/img/logo-polyflix.png" alt="Logo Polyflix" /></a></li>
+          <li><a href="./admin.html" class="other-link">Admin</a></li>
+          <li><a href="./about.html" class="other-link">À propos</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Search Bar -->
+    <nav>
+      <form id="search-form">
+        <div class="search-bar" style="display: flex; align-items: center;">
+          <input type="text" id="search-input" placeholder="Recherche de films" />
+          <button class="search-button">
+            <img src="./assets/img/search.png" alt="Search" />
+          </button>
+        </div>
+      </form>
+    </nav>
+  </header>
+    
+  
+  <main>
+    <h2>Nouveautés <i class="fa-solid fa-film"></i></h2>
+    <!-- Liste de films "Nouveautés" -->
+    <div class="posters-container">
+      <div class="poster-container" data-title="desert" >
+        <a href="movie.html" id="movie-1">
+        <img src="./assets/img/desert.jpg" alt="desert" />
+        <div class="overlay">
+          <div class="play-button">
+            <i class="fas fa-play fa-5x"></i>
+          </div>
+          <div class="title-overlay">Desert</div>
+      </div>
+      </a>
+    </div>
+    
+      <div class="poster-container" data-title="cyborg" >
+        <a href="movie.html" id="movie-2">
+        <img src="./assets/img/cyborg.jpg" alt="cyborg" />
+        <div class="overlay">
+          <div class="play-button">
+            <i class="fas fa-play fa-5x"></i>
+          </div>
+          <div class="title-overlay">Cyborg</div>
+      </div>
+      </a>
+    </div>
+
+      <div class="poster-container" data-title="noir" >
+        <a href="movie.html" id="movie-3">
+        <img src="./assets/img/noir.jpg" alt="noir" />
+        <div class="overlay">
+          <div class="play-button">
+            <i class="fas fa-play fa-5x"></i>
+          </div>
+          <div class="title-overlay">Les bons vieux jours 2</div>
+      </div>
+      </a>
+    </div>
+    </div>
+
+    <h2>Vos recommandations <i class="fa-solid fa-heart"></i></h2>
+    <!-- Liste de films "Vos recommandations" -->
+    <div class="posters-container">
+      <div class="poster-container" data-title="arizona" >
+      <a href="movie.html" id="movie-4">
+      <img src="./assets/img/arizona.jpg" alt="arizona" />
+      <div class="overlay">
+        <div class="play-button">
+            <i class="fas fa-play fa-5x"></i>
+        </div>
+        <div class="title-overlay">Arizona</div>
+    </div>
+    </a>
+  </div>
+    <div class="poster-container" data-title="piano" >
+      <a href="movie.html" id="movie-5">
+      <img src="./assets/img/piano.jpg" alt="piano" />
+      <div class="overlay">
+        <div class="play-button">
+            <i class="fas fa-play fa-5x"></i>
+        </div>
+        <div class="title-overlay">Le piano de l'aveugle</div>
+    </div>
+    </a>
+  </div>
+    </div>
+  </main>
+  <footer>
+    <span id="student-1">Benzekri, Omar 2244082 #1</span>
+    <span id="student-2">Benzekri, Omar 2244082 #1</span>
+  </footer>
+</body>
+
+</html>

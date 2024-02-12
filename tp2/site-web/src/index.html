@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyNotes</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favico.ico" />
+    <script src="assets/js/mainPageHandler.js" type="module" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <img
+            src="https://www.polymtl.ca/salle-de-presse/profiles/portail/themes/custom/theme_polytechnique/boilerplate/img/header/polytechnique-signature-rgb-gauche-fr.png">
+        <p>PolyNotes</p>
+    </header>
+    <div id="app" class="body">
+        <label for="sort-order">Trier par date :</label>
+        <select id="sort-order">
+            <option value="" disabled selected>Sélectionnez l'ordre de tri</option>
+            <option value="newest">Du plus récent au plus ancien</option>
+            <option value="oldest">Du plus ancien au plus récent</option>
+        </select>
+        <h1>Notes Épinglées</h1>
+        <div id="pinned-notes" class="notes">
+            <!-- TODO : Générer le HTML de manière dynamique -->
+            <!-- <div class="note" data-id="54321" style="background-color: red;">
+                <div id="pinned-icon-spaces">
+                    <h2>Exercices algèbre linéaire</h2>
+                    <i class="fa fa-paperclip pin hidden" style="color: white;"></i>
+                </div>
+                <p>Tags: TODO, Test, modifiable</p>
+                <p class="date">Dernière modification: 9/15/2023</p>
+                <i class="delete-button fa fa-trash-o hidden"></i>
+                <i class="details-button fa fa-info hidden"></i>
+            </div> -->
+        </div>
+        <h1>Notes</h1>
+        <div id="notes" class="notes"></div>
+    </div>
+    <div id="button-container">
+        <button id="createNoteButton" class="button">Créer une nouvelle note</button>
+        <button id="delete-all-button" class="button">Supprimer toutes les notes</button>
+    </div>
+
+    <dialog id="createNoteModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="closeModal">&times;</span>
+            <h3>Créer une nouvelle note</h3>
+            <form id="noteForm">
+                <label for="noteTitle">Titre :</label>
+                <input type="text" id="noteTitle" required>
+
+                <label for="noteContent">Contenu :</label>
+                <textarea id="noteContent" required></textarea>
+
+                <label for="noteTags">Tags (séparés par des virgules) :</label>
+                <input type="text" id="noteTags">
+
+                <label for="noteColor">Couleur :</label>
+                <input id="noteColor" type="color"></input>
+
+                <label for="notePinned">Épinglée :</label>
+                <input type="checkbox" id="notePinned">
+
+                <button type="submit">Créer</button>
+            </form>
+        </div>
+    </dialog>
+</body>
+
+</html>
